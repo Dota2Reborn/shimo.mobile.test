@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project name="Demo" default="run" basedir=".">
+	<echo message="import libs" />
+	<path id="run.classpath">
+		<fileset dir="${basedir}">
+			<include name="lib/**" />
+		</fileset>
+	</path>
+	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="run.classpath" />
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="test-output/screen-shot" />
+	</target>
+	<target name="compile" depends="clean">
+		<echo message="mkdir" />
+		<mkdir dir="build/classes" />
+		<javac srcdir="src" destdir="build/classes" debug="on" encoding="UTF-8">
+			<classpath refid="run.classpath" />
+		</javac>
+	</target>
+	<target name="copy_mkdir" depends="compile">
+		<copy file="src\elementFile\locator.json" tofile="src\elementFile\locator_1.json" />
+		<move file="src\elementFile\locator_1.json" tofile="build/classes/elementFile/locator.json" />
+	</target>
+	<path id="runpath">
+		<path refid="run.classpath" />
+		<pathelement location="build/classes" />
+	</path>
+	<target name="run" depends="copy_mkdir">
+		<testng classpathref="runpath" outputDir="test-output">
+			<xmlfileset dir="${basedir}" includes="testng.xml" />
+			<jvmarg value="-Dfile.encoding=UTF-8" />
+		</testng>
+	</target>
+	<target name="testng">
+		<mkdir dir="test-output" />
+		<testng outputDir="test-output" haltonfailure="false" listeners="com.netease.qa.testng.PowerEmailableReporter,
+	com.netease.qa.testng.RetryListener, com.netease.qa.testng.TestResultListener">
+			<xmlfileset dir="." includes="testng.xml" />
+		</testng>
+	</target>
+</project>

@@ -1,0 +1,240 @@
+[
+	{
+		"note": "登录页面",
+		"pageName": "loginPage",
+		"elements": [
+			{
+				"note": "用户名",
+				"elementName": "userEmail",
+				"locateUsing": "name",
+				"locator": "email"
+			},
+			{
+				"note": "密码",
+				"elementName": "userPwd",
+				"locateUsing": "name",
+				"locator": "password"
+			},
+			{
+				"note": "登录按钮",
+				"elementName": "login_submit",
+				"locateUsing": "id",
+				"locator": "bd-login-submit"
+			},
+			{
+				"note": "注册页面下一步按钮",
+				"elementName": "login_register",
+				"locateUsing": "id",
+				"locator": "bd-register-submit"
+			}
+		]
+	},
+	{
+		"note": "官方首页",
+		"pageName": "homePage",
+		"elements": [
+			{
+				"note": "首页注册按钮",
+				"elementName": "homePage_register",
+				"locateUsing": "xpath",
+				"locator": "//a[@class='home-button btn-middle blue register-button']"
+			},
+			{
+				"note": "首页登录按钮",
+				"elementName": "homePage_login",
+				"locateUsing": "xpath",
+				"locator": "//a[@class='home-button btn-middle header-button']"
+			}
+		]
+	},
+	{
+		"note": "桌面",
+		"pageName": "desktop",
+		"elements": [
+			{
+				"note": "新建文档按钮",
+				"elementName": "desktop_newDoc",
+				"locateUsing": "id",
+				"locator": "file-btn"
+			},
+			{
+				"note": "个人资料",
+				"elementName": "desktop_personSetting",
+				"locateUsing": "id",
+				"locator": "self-btn"
+			},
+			{
+				"note": "桌面左上角菜单栏",
+				"elementName": "desktop_setting",
+				"locateUsing": "id",
+				"locator": "side-btn"
+			},
+			{
+				"note": "新建文件夹按钮",
+				"elementName": "desktop_newFolder_btn",
+				"locateUsing": "id",
+				"locator": "folder-btn"
+			},
+			{
+				"note": "新建文件夹文件夹名输入",
+				"elementName": "desktop_newFolder_input",
+				"locateUsing": "className",
+				"locator": "folder-name"
+			},
+			{
+				"note": "新建文件夹文件夹名输入确认按钮",
+				"elementName": "desktop_newFolder_confirm_btn",
+				"locateUsing": "className",
+				"locator": "finish-btn"
+			},
+			{
+				"note": "文件夹返回桌面按钮",
+				"elementName": "folder_backToDesktop_btn",
+				"locateUsing": "id",
+				"locator": "back-btn"
+			},
+			{
+				"note": "桌面第一个文件的文件名",
+				"elementName": "desktop_file_1",
+				"locateUsing": "xpath",
+				"locator": "(//div[@class='name'])[1]"
+			},
+			{
+				"note": "桌面第一个文件的菜单",
+				"elementName": "desktop_file_1_setting",
+				"locateUsing": "xpath",
+				"locator": "(//span[@class='more'])[1]"
+			},
+			{
+				"note": "桌面文件菜单中协作者按钮",
+				"elementName": "desktop_file_share",
+				"locateUsing": "className",
+				"locator": "share"
+			},
+			{
+				"note": "桌面文件菜单中删除按钮",
+				"elementName": "desktop_file_del",
+				"locateUsing": "className",
+				"locator": "delete"
+			},
+			{
+				"note": "桌面文件菜单中移动按钮",
+				"elementName": "desktop_file_move",
+				"locateUsing": "className",
+				"locator": "move"
+			},
+			{
+				"note": "列表中第一个文件夹",
+				"elementName": "desktop_file_moveToFolder_1",
+				"locateUsing": "xpath",
+				"locator": "//li[@class='ob-li thumbnail folder']"
+			},
+			{
+				"note": "添加协作者邮箱地址输入",
+				"elementName": "addCollaborator_input",
+				"locateUsing": "className",
+				"locator": "invite-input"
+			},
+			{
+				"note": "协作列表中添加按钮",
+				"elementName": "addCollaborator_btn",
+				"locateUsing": "className",
+				"locator": "invite-btn"
+			},
+			{
+				"note": "协作列表中第一个协作者邮箱地址",
+				"elementName": "addCollaborator_info_email",
+				"locateUsing": "xpath",
+				"locator": "(//div[@class='user-item-info']//div[2])[1]"
+			},
+			{
+				"note": "协作列表编辑按钮",
+				"elementName": "addCollaborator_edit_btn",
+				"locateUsing": "className",
+				"locator": "user-edit-btn"
+			},
+			{
+				"note": "协作列表删除协作者按钮",
+				"elementName": "addCollaborator_del_btn",
+				"locateUsing": "className",
+				"locator": "delete-invited-user"
+			},
+			{
+				"note": "消息按钮",
+				"elementName": "message_btn",
+				"locateUsing": "id",
+				"locator": "message-btn"
+			}
+		]
+	},
+	{
+		"note": "文档",
+		"pageName": "doc",
+		"elements": [
+			{
+				"note": "文档返回桌面按钮",
+				"elementName": "btn_doc_back",
+				"locateUsing": "id",
+				"locator": "pad-back-btn"
+			},
+			{
+				"note": "文档标题输入",
+				"elementName": "input_doc_title",
+				"locateUsing": "id",
+				"locator": "doc-title-input"
+			},
+			{
+				"note": "文档内容编辑",
+				"elementName": "input_doc",
+				"locateUsing": "xpath",
+				"locator": "//div[@class='ql-editor ql-blank mousetrap']"
+			},
+			{
+				"note": "文档设置菜单",
+				"elementName": "doc_setting",
+				"locateUsing": "id",
+				"locator": "mobile-more-btn"
+			},
+			{
+				"note": "文档设置菜单-分享tab",
+				"elementName": "doc_setting_share",
+				"locateUsing": "xpath",
+				"locator": "//ul[@class='tab-items']//li[2]"
+			},
+			{
+				"note": "分享状态-可写",
+				"elementName": "doc_share_editable",
+				"locateUsing": "xpath",
+				"locator": "//div[@data-switch='editable']"
+			},
+			{
+				"note": "分享状态-只读",
+				"elementName": "doc_share_readonly",
+				"locateUsing": "xpath",
+				"locator": "//div[@data-switch='readonly']"
+			},
+			{
+				"note": "分享状态-禁用",
+				"elementName": "doc_share_private",
+				"locateUsing": "xpath",
+				"locator": "//div[@data-switch='private']"
+			},
+			{
+				"note": "分享状态-详细信息",
+				"elementName": "doc_share_info",
+				"locateUsing": "className",
+				"locator": "share-intro"
+			},
+			{
+				"note": "分享页面返回到文档",
+				"elementName": "backToDoc_btn",
+				"locateUsing": "id",
+				"locator": "more-back"
+			}
+		]
+	},
+	{
+		"pageName": "--------------------------------------------------------------------",
+		"test":"123123123123123"
+	}
+]

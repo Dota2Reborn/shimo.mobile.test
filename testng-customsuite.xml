@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser" value="chrome" />
+	<parameter name="nodeIp" value="http://localhost:4444" />
+	<parameter name="local" value="true" />
+	<test name="Default test" verbose="2">
+		<classes>
+			<class name="cases.desktop.testNotice" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
