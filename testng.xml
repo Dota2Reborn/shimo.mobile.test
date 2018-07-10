@@ -10,7 +10,7 @@
 	<parameter name="local" value="false" />
 	<test name="test1">
 		<classes>
-			<class name="cases.mobile.*" />
+			<class name="cases.mobile.testMobile" />
 		</classes>
 	</test>
 </suite>
