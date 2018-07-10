@@ -185,7 +185,6 @@ public class testMobile extends TestInit {
 		click(desktop_file_del);
 
 		assertTrue(r1 && r2 && r3);
-		
 	}
 
 	/**
