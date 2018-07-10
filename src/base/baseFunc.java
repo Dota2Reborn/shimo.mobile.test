@@ -53,7 +53,6 @@ public class baseFunc {
 				driver = new ChromeDriver(option);
 			}
 		} else {
-			if (browser.equals("iPhone 6")) {
 				ChromeOptions option = new ChromeOptions();
 				option.setCapability("browserName", "chrome");
 				option.setCapability("version", "67");
@@ -61,31 +60,6 @@ public class baseFunc {
 				option.addArguments("--user-agent=iPhone 6");
 				URL remoteAddress = new URL(nodeIp + "/wd/hub");
 				driver = new RemoteWebDriver(remoteAddress, option);
-			} else if (browser.equals("iPhone 7")) {
-				ChromeOptions option = new ChromeOptions();
-				option.setCapability("browserName", "chrome");
-				option.setCapability("version", "67");
-				option.setCapability("plaform", "ANY");
-				option.addArguments("--user-agent=iPhone 6");
-				URL remoteAddress = new URL(nodeIp + "/wd/hub");
-				driver = new RemoteWebDriver(remoteAddress, option);
-			} else if (browser.equals("iPhone 8")) {
-				ChromeOptions option = new ChromeOptions();
-				option.setCapability("browserName", "chrome");
-				option.setCapability("version", "67");
-				option.setCapability("plaform", "ANY");
-				option.addArguments("--user-agent=iPhone 6");
-				URL remoteAddress = new URL(nodeIp + "/wd/hub");
-				driver = new RemoteWebDriver(remoteAddress, option);
-			} else {
-				ChromeOptions option = new ChromeOptions();
-				option.setCapability("browserName", "chrome");
-				option.setCapability("version", "67");
-				option.setCapability("plaform", "ANY");
-				option.addArguments("--user-agent=iPhone 6");
-				URL remoteAddress = new URL(nodeIp + "/wd/hub");
-				driver = new RemoteWebDriver(remoteAddress, option);
-			}
 		}
 		
 		driver.manage().window().setSize(new Dimension(600, 900));
