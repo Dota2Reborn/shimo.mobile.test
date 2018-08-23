@@ -129,7 +129,7 @@ public class testMobile extends TestInit {
 		click(desktop_file_share);
 		sendKeys(addCollaborator_input, "liuchen@shimo.im");
 		click(addCollaborator_btn);
-		boolean r1 = getText(addCollaborator_info_email).equals("liuchen@shimo.im");
+		boolean r1 = getText(addCollaborator_info_email).equals("liuc***@shimo.im");
 		click(addCollaborator_edit_btn);
 		click(addCollaborator_del_btn);
 
